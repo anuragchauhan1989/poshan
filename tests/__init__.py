@@ -4,6 +4,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.action_chains import ActionChains
 
 
 @pytest.mark.usefixtures("setup")
@@ -22,13 +23,10 @@ class BaseClass:
 
 
     def selDateFromDatePicker(self, locator, desired_date):
-    
         self.get_element(locator).click()
         self.driver.execute_script("arguments[0].value = '11-09-2023';", self.get_element(locator))
         time.sleep(config.ACTION_DELAY)
         self.get_element(locator).send_keys(Keys.TAB)
-
-
 
 
 

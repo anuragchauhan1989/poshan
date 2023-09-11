@@ -17,6 +17,7 @@ class TestPoshanPage(BaseClass):
         self.get_element(PASSWORD_INPUT).send_keys('mow&cd-506704') #right Password    
         self.get_element(LOGIN_BUTTON).submit()
         self.selectByIndex(SELECT_THEME_ELEMENT,3)
+        self.selectByIndex(SELECT_ACTIVITY_ELEMENT,3)
         self.selDateFromDatePicker(FROM_DATE_ELEMENT,'11-09-2023')
         
         
