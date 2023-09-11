@@ -23,10 +23,10 @@ class BaseClass:
 
     def selDateFromDatePicker(self, locator, desired_date):
     
-        # self.get_element(locator).click()
-        # self.driver.execute_script("arguments[0].value = '11-09-2023';", self.get_element(locator))
-        # time.sleep(config.ACTION_DELAY)
-        # self.get_element(locator).send_keys(Keys.TAB)
+        self.get_element(locator).click()
+        self.driver.execute_script("arguments[0].value = '11-09-2023';", self.get_element(locator))
+        time.sleep(config.ACTION_DELAY)
+        self.get_element(locator).send_keys(Keys.TAB)
 
 
 
