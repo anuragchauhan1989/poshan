@@ -1,0 +1,4 @@
+selenium==4.5.0
+pandas
+webdriver-manager==4.0.0
+pytest==6.2.5
