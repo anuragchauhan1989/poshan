@@ -14,19 +14,21 @@ class BaseClass:
         Parameters:
         element: The element finder tuple eg: (By.NAME,'ELEMENT_NAME') '''
         time.sleep(config.ACTION_DELAY)
-        myElem = WebDriverWait(self.driver, config.WEB_DRIVER_WAIT).until(EC.presence_of_element_located(element))  
+        myElem = WebDriverWait(self.driver, config.WEB_DRIVER_WAIT).until(EC.presence_of_element_located(element))
         return myElem
 
-    def selectByIndex(self, locator ,index):       
+    def selectByVisibleText(self, locator, text):
+        #self.scrollIntoView(locator)       
         sel = Select(self.get_element(locator))
-        sel.select_by_index(index)
+        sel.select_by_visible_text(text)
 
-
-    def selDateFromDatePicker(self, locator, desired_date):
-        self.get_element(locator).click()
-        self.driver.execute_script("arguments[0].value = '11-09-2023';", self.get_element(locator))
-        time.sleep(config.ACTION_DELAY)
-        self.get_element(locator).send_keys(Keys.TAB)
+        
+    def scrollIntoView(self, locator):
+           element = self.get_element(locator)
+           time.sleep(config.ACTION_DELAY)
+           self.driver.execute_script("arguments[0].scrollIntoView();", element)
+    
+       
 
 
 

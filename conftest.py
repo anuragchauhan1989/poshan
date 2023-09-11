@@ -4,7 +4,7 @@ import config
 from selenium.webdriver.firefox.service import Service as FirefoxService
 from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.edge.service import Service as EdgeService
-
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 
 def pytest_addoption(parser):
@@ -37,8 +37,10 @@ def setup(request):
         driver = webdriver.Chrome(service = chrome_service, options=chrome_options)
 
     elif browser_name == "firefox":
+       firefox_capabilities = DesiredCapabilities.FIREFOX
+       firefox_capabilities['marionette'] = True
        firefox_service = FirefoxService(executable_path = f"{config.DRIVER_PATH}\\geckodriver.exe")
-       driver = webdriver.Firefox(service = firefox_service)
+       driver = webdriver.Firefox(service = firefox_service, capabilities=firefox_capabilities)
     elif browser_name == "IE":
         edge_service = EdgeService(executable_path=f"{config.DRIVER_PATH}\\msedgedriver.exe")
         driver = webdriver.Edge(service=edge_service)
