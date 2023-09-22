@@ -17,18 +17,18 @@ class BaseClass:
         myElem = WebDriverWait(self.driver, config.WEB_DRIVER_WAIT).until(EC.presence_of_element_located(element))
         return myElem
 
-    def selectByVisibleText(self, locator, text):
-        #self.scrollIntoView(locator)       
+    def selectByVisibleText(self, locator, text):     
         sel = Select(self.get_element(locator))
         sel.select_by_visible_text(text)
 
-        
+
     def scrollIntoView(self, locator):
            element = self.get_element(locator)
            time.sleep(config.ACTION_DELAY)
            self.driver.execute_script("arguments[0].scrollIntoView();", element)
-    
-       
 
+    def clearElement(self, locator):
+         input_field = self.get_element(locator)
+         self.driver.execute_script("arguments[0].value = '';", input_field)
 
 
