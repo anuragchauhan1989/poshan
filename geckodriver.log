@@ -8821,3 +8821,110 @@ b@https://www.google.com/xjs/_/js/k=xjs.s.en_GB.4UJ3N2ToGeY.O/am=CAAAAAAAAAAAAAA
 
 1695348763509	Marionette	INFO	Stopped listening on port 62773
 Dynamically enable window occlusion 1
+1695348772968	geckodriver	INFO	Listening on 127.0.0.1:62841
+1695348776027	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62842" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Anurag\\AppData\\Local\\Temp\\rust_mozprofile5NO841"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695348776400	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695348776488	Marionette	INFO	Listening on port 62851
+WebDriver BiDi listening on ws://127.0.0.1:62842
+Read port: 62851
+1695348776756	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62842/devtools/browser/7927b291-5103-499e-b907-312eef2df66a
+JavaScript warning: https://www.google.com/xjs/_/js/k=xjs.s.en_GB.4UJ3N2ToGeY.O/am=CAAAAAAAAAAAAAAAAgCgBsIhgA0wQCAAAgAAEACAggIRBDAAQIBHuUgMAAABgBCYAOJgDwCghGoAAAAAAIT9AAAAAAAAC4AAAKAJYEAIUAQEAAAAQB4AgAcAGERYAAAAAAAAAAAAAAKeIBhckAAICIAAAAAAAAAAAAAAqWzyYgAB/d=1/ed=1/dg=2/rs=ACT90oGcPn8T-xU1QQvy1BXLTD2WXWGDkA/ee=cEt90b:ws9Tlc;qddgKe:x4FYXe,d7YSfd;yxTchf:KUM7Z;dtl0hd:lLQWFe;eHDfl:ofjVkb;qaS3gd:yiLg6e;nAFL3:NTMZac,s39S4;oGtAuc:sOXFj;iFQyKf:vfuNJf,QIhFr;SNUn3:ZwDk9d,x8cHvb;io8t5d:sgY6Zb;Oj465e:KG2eXe,KG2eXe;Erl4fe:FloWmf,FloWmf;JsbNhc:Xd8iUd;sP4Vbe:VwDzFe;kMFpHd:OTA3Ae;uY49fb:COQbmf;Pjplud:PoEs9b,EEDORb;QGR0gd:Mlhmy;a56pNe:JEfCwb;Me32dd:MEeYgc;wR5FRb:TtcOte,O1Gjze;pXdRYb:JKoKVe;dIoSBb:ZgGg9b;EmZ2Bf:zr1jrb;NSEoX:lazG7b;eBAeSb:Ck63tb;WCEKNd:I46Hvd;wV5Pjc:L8KGxe;EVNhjf:pw70Gc;sTsDMc:kHVSUb;wQlYve:aLUfP;zOsCQe:Ko78Df;KcokUb:KiuZBf;YV5bee:IvPZ6d;kbAm9d:MkHyGd;ZWEUA:afR4Cf;g8nkx:U4MzKc;lzgfYb:PI40bd;w9w86d:dt4g2b;GleZL:J1A7Od;bcPXSc:gSZLJb;JXS8fb:Qj0suc;IoGlCf:b5lhvb;VN6jIc:ddQyuf;vfVwPd:lcrkwe;ESrPQc:mNTJvc;pNsl2d:j9Yuyc;VGRfx:VFqbr;BjwMce:cXX2Wb;R9Ulx:CR7Ufe;kY7VAf:d91TEb;xBbsrc:NEW1Qc;KpRAue:Tia57b;jY0zg:Q6tNgc;l8Azde:j4Ca9b;oSUNyd:fTfGO,fTfGO,pnvXVc;SMDL4c:fTfGO,pnvXVc;aZ61od:arTwJ;ZrFutb:W4Cdfc;K8vqCc:MyIcle;NPKaK:SdcwHb;LBgRLc:XVMNvd,SdcwHb;rQSrae:C6D5Fc;kCQyJ:ueyPK;KQzWid:mB4wNe;EABSZ:MXZt9d;qavrXe:zQzcXe,mYbt1d;TxfV6d:YORN0b;UDrY1c:eps46d;F9mqte:UoRcbe;Nyt6ic:jn2sGd;w3bZCb:ZPGaIb;G0KhTb:LIaoZ;XUezZ:sa7lqb;aAJE9c:WHW6Ef;V2HTTe:RolTY;Wfmdue:g3MJlb;imqimf:jKGL2e;BgS6mb:fidj5d;UVmjEd:EesRsb;z97YGf:oug9te;AfeaP:TkrAjf;eBZ5Nd:audvde;CxXAWb:YyRLvc;SLtqO:Kh1xYe;tosKvd:ZCqP3;VOcgDe:YquhTb;uuQkY:u2V3ud;WDGyFe:jcVOxd;trZL0b:qY8PFe;VxQ32b:k0XsBb;DULqB:RKfG5c;Np8Qkd:Dpx6qc;cFTWae:gT8qnd;gaub4:TN6bMe;DpcR3d:zL72xf;hjRo6e:F62sG;yGxLoc:FmAr0c;oUlnpc:RagDlc;R2kc8b:ALJqWb;pj82le:mg5CW;dLlj2:Qqt3Gf;qGV2uc:HHi04c;gtVSi:ekUOYd;UyG7Kb:wQd0G;LsNahb:ucGLNb;xbe2wc:wbTLEd;Q1Ow7b:x5CSu;bFZ6gf:RsDQqe;okUaUd:wItadb;G6wU6e:hezEbd;uknmt:GkPrzb;U96pRd:FsR04;PqHfGe:im2cZe;Fmv9Nc:O1Tzwc;hK67qb:QWEO5b;BMxAGc:E5bFse;R4IIIb:QWfeKf;whEZac:F4AmNb;tH4IIe:Ymry6;lkq0A:JyBE3e;daB6be:lMxGPd;LEikZe:byfTOb,lsjVmc/m=cdos,cr,hsm,jsa,mb4ZUb,d,csi,cEt90b,SNUn3,qddgKe,sTsDMc,dtl0hd,eHDfl, line 410: Script terminated by timeout at:
+b@https://www.google.com/xjs/_/js/k=xjs.s.en_GB.4UJ3N2ToGeY.O/am=CAAAAAAAAAAAAAAAAgCgBsIhgA0wQCAAAgAAEACAggIRBDAAQIBHuUgMAAABgBCYAOJgDwCghGoAAAAAAIT9AAAAAAAAC4AAAKAJYEAIUAQEAAAAQB4AgAcAGERYAAAAAAAAAAAAAAKeIBhckAAICIAAAAAAAAAAAAAAqWzyYgAB/d=1/ed=1/dg=2/rs=ACT90oGcPn8T-xU1QQvy1BXLTD2WXWGDkA/ee=cEt90b:ws9Tlc;qddgKe:x4FYXe,d7YSfd;yxTchf:KUM7Z;dtl0hd:lLQWFe;eHDfl:ofjVkb;qaS3gd:yiLg6e;nAFL3:NTMZac,s39S4;oGtAuc:sOXFj;iFQyKf:vfuNJf,QIhFr;SNUn3:ZwDk9d,x8cHvb;io8t5d:sgY6Zb;Oj465e:KG2eXe,KG2eXe;Erl4fe:FloWmf,FloWmf;JsbNhc:Xd8iUd;sP4Vbe:VwDzFe;kMFpHd:OTA3Ae;uY49fb:COQbmf;Pjplud:PoEs9b,EEDORb;QGR0gd:Mlhmy;a56pNe:JEfCwb;Me32dd:MEeYgc;wR5FRb:TtcOte,O1Gjze;pXdRYb:JKoKVe;dIoSBb:ZgGg9b;EmZ2Bf:zr1jrb;NSEoX:lazG7b;eBAeSb:Ck63tb;WCEKNd:I46Hvd;wV5Pjc:L8KGxe;EVNhjf:pw70Gc;sTsDMc:kHVSUb;wQlYve:aLUfP;zOsCQe:Ko78Df;KcokUb:KiuZBf;YV5bee:IvPZ6d;kbAm9d:MkHyGd;ZWEUA:afR4Cf;g8nkx:U4MzKc;lzgfYb:PI40bd;w9w86d:dt4g2b;GleZL:J1A7Od;bcPXSc:gSZLJb;JXS8fb:Qj0suc;IoGlCf:b5lhvb;VN6jIc:ddQyuf;vfVwPd:lcrkwe;ESrPQc:mNTJvc;pNsl2d:j9Yuyc;VGRfx:VFqbr;BjwMce:cXX2Wb;R9Ulx:CR7Ufe;kY7VAf:d91TEb;xBbsrc:NEW1Qc;KpRAue:Tia57b;jY0zg:Q6tNgc;l8Azde:j4Ca9b;oSUNyd:fTfGO,fTfGO,pnvXVc;SMDL4c:fTfGO,pnvXVc;aZ61od:arTwJ;ZrFutb:W4Cdfc;K8vqCc:MyIcle;NPKaK:SdcwHb;LBgRLc:XVMNvd,SdcwHb;rQSrae:C6D5Fc;kCQyJ:ueyPK;KQzWid:mB4wNe;EABSZ:MXZt9d;qavrXe:zQzcXe,mYbt1d;TxfV6d:YORN0b;UDrY1c:eps46d;F9mqte:UoRcbe;Nyt6ic:jn2sGd;w3bZCb:ZPGaIb;G0KhTb:LIaoZ;XUezZ:sa7lqb;aAJE9c:WHW6Ef;V2HTTe:RolTY;Wfmdue:g3MJlb;imqimf:jKGL2e;BgS6mb:fidj5d;UVmjEd:EesRsb;z97YGf:oug9te;AfeaP:TkrAjf;eBZ5Nd:audvde;CxXAWb:YyRLvc;SLtqO:Kh1xYe;tosKvd:ZCqP3;VOcgDe:YquhTb;uuQkY:u2V3ud;WDGyFe:jcVOxd;trZL0b:qY8PFe;VxQ32b:k0XsBb;DULqB:RKfG5c;Np8Qkd:Dpx6qc;cFTWae:gT8qnd;gaub4:TN6bMe;DpcR3d:zL72xf;hjRo6e:F62sG;yGxLoc:FmAr0c;oUlnpc:RagDlc;R2kc8b:ALJqWb;pj82le:mg5CW;dLlj2:Qqt3Gf;qGV2uc:HHi04c;gtVSi:ekUOYd;UyG7Kb:wQd0G;LsNahb:ucGLNb;xbe2wc:wbTLEd;Q1Ow7b:x5CSu;bFZ6gf:RsDQqe;okUaUd:wItadb;G6wU6e:hezEbd;uknmt:GkPrzb;U96pRd:FsR04;PqHfGe:im2cZe;Fmv9Nc:O1Tzwc;hK67qb:QWEO5b;BMxAGc:E5bFse;R4IIIb:QWfeKf;whEZac:F4AmNb;tH4IIe:Ymry6;lkq0A:JyBE3e;daB6be:lMxGPd;LEikZe:byfTOb,lsjVmc/m=cdos,cr,hsm,jsa,mb4ZUb,d,csi,cEt90b,SNUn3,qddgKe,sTsDMc,dtl0hd,eHDfl:410:40
+
+JavaScript error: https://poshanabhiyaan.gov.in/js/HeaderJS/Header.js, line 1: SyntaxError: import declarations may only appear at top level of a module
+JavaScript error: https://poshanabhiyaan.gov.in/js/HeaderJS/Header.js, line 1: SyntaxError: import declarations may only appear at top level of a module
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://poshanabhiyaan.gov.in."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://poshanabhiyaan.gov.in."
+Marionette threw an error: [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: chrome://remote/content/shared/Capture.sys.mjs :: capture.canvas :: line 137"  data: no]
+capture.canvas@chrome://remote/content/shared/Capture.sys.mjs:137:62
+takeScreenshot@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:287:37
+
+console.error: "Marionette threw an error: [Exception... \"Failure\"  nsresult: \"0x80004005 (NS_ERROR_FAILURE)\"  location: \"JS frame :: chrome://remote/content/shared/Capture.sys.mjs :: capture.canvas :: line 137\"  data: no]\ncapture.canvas@chrome://remote/content/shared/Capture.sys.mjs:137:62\ntakeScreenshot@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:287:37\n"
+Marionette threw an error: [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: chrome://remote/content/shared/Capture.sys.mjs :: capture.canvas :: line 137"  data: no]
+capture.canvas@chrome://remote/content/shared/Capture.sys.mjs:137:62
+takeScreenshot@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:287:37
+
+console.error: "Marionette threw an error: [Exception... \"Failure\"  nsresult: \"0x80004005 (NS_ERROR_FAILURE)\"  location: \"JS frame :: chrome://remote/content/shared/Capture.sys.mjs :: capture.canvas :: line 137\"  data: no]\ncapture.canvas@chrome://remote/content/shared/Capture.sys.mjs:137:62\ntakeScreenshot@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:287:37\n"
+JavaScript error: https://poshanabhiyaan.gov.in/js/HeaderJS/Header.js, line 1: SyntaxError: import declarations may only appear at top level of a module
+Marionette threw an error: [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: chrome://remote/content/shared/Capture.sys.mjs :: capture.canvas :: line 137"  data: no]
+capture.canvas@chrome://remote/content/shared/Capture.sys.mjs:137:62
+takeScreenshot@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:287:37
+
+console.error: "Marionette threw an error: [Exception... \"Failure\"  nsresult: \"0x80004005 (NS_ERROR_FAILURE)\"  location: \"JS frame :: chrome://remote/content/shared/Capture.sys.mjs :: capture.canvas :: line 137\"  data: no]\ncapture.canvas@chrome://remote/content/shared/Capture.sys.mjs:137:62\ntakeScreenshot@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:287:37\n"
+Marionette threw an error: [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: chrome://remote/content/shared/Capture.sys.mjs :: capture.canvas :: line 137"  data: no]
+capture.canvas@chrome://remote/content/shared/Capture.sys.mjs:137:62
+takeScreenshot@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:287:37
+
+console.error: "Marionette threw an error: [Exception... \"Failure\"  nsresult: \"0x80004005 (NS_ERROR_FAILURE)\"  location: \"JS frame :: chrome://remote/content/shared/Capture.sys.mjs :: capture.canvas :: line 137\"  data: no]\ncapture.canvas@chrome://remote/content/shared/Capture.sys.mjs:137:62\ntakeScreenshot@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:287:37\n"
+Marionette threw an error: [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: chrome://remote/content/shared/Capture.sys.mjs :: capture.canvas :: line 137"  data: no]
+capture.canvas@chrome://remote/content/shared/Capture.sys.mjs:137:62
+takeScreenshot@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:287:37
+
+console.error: "Marionette threw an error: [Exception... \"Failure\"  nsresult: \"0x80004005 (NS_ERROR_FAILURE)\"  location: \"JS frame :: chrome://remote/content/shared/Capture.sys.mjs :: capture.canvas :: line 137\"  data: no]\ncapture.canvas@chrome://remote/content/shared/Capture.sys.mjs:137:62\ntakeScreenshot@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:287:37\n"
+Marionette threw an error: [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: chrome://remote/content/shared/Capture.sys.mjs :: capture.canvas :: line 137"  data: no]
+capture.canvas@chrome://remote/content/shared/Capture.sys.mjs:137:62
+takeScreenshot@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:287:37
+
+console.error: "Marionette threw an error: [Exception... \"Failure\"  nsresult: \"0x80004005 (NS_ERROR_FAILURE)\"  location: \"JS frame :: chrome://remote/content/shared/Capture.sys.mjs :: capture.canvas :: line 137\"  data: no]\ncapture.canvas@chrome://remote/content/shared/Capture.sys.mjs:137:62\ntakeScreenshot@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:287:37\n"
+Marionette threw an error: [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: chrome://remote/content/shared/Capture.sys.mjs :: capture.canvas :: line 137"  data: no]
+capture.canvas@chrome://remote/content/shared/Capture.sys.mjs:137:62
+takeScreenshot@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:287:37
+
+console.error: "Marionette threw an error: [Exception... \"Failure\"  nsresult: \"0x80004005 (NS_ERROR_FAILURE)\"  location: \"JS frame :: chrome://remote/content/shared/Capture.sys.mjs :: capture.canvas :: line 137\"  data: no]\ncapture.canvas@chrome://remote/content/shared/Capture.sys.mjs:137:62\ntakeScreenshot@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:287:37\n"
+Marionette threw an error: [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: chrome://remote/content/shared/Capture.sys.mjs :: capture.canvas :: line 137"  data: no]
+capture.canvas@chrome://remote/content/shared/Capture.sys.mjs:137:62
+takeScreenshot@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:287:37
+
+console.error: "Marionette threw an error: [Exception... \"Failure\"  nsresult: \"0x80004005 (NS_ERROR_FAILURE)\"  location: \"JS frame :: chrome://remote/content/shared/Capture.sys.mjs :: capture.canvas :: line 137\"  data: no]\ncapture.canvas@chrome://remote/content/shared/Capture.sys.mjs:137:62\ntakeScreenshot@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:287:37\n"
+Marionette threw an error: [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: chrome://remote/content/shared/Capture.sys.mjs :: capture.canvas :: line 137"  data: no]
+capture.canvas@chrome://remote/content/shared/Capture.sys.mjs:137:62
+takeScreenshot@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:287:37
+
+console.error: "Marionette threw an error: [Exception... \"Failure\"  nsresult: \"0x80004005 (NS_ERROR_FAILURE)\"  location: \"JS frame :: chrome://remote/content/shared/Capture.sys.mjs :: capture.canvas :: line 137\"  data: no]\ncapture.canvas@chrome://remote/content/shared/Capture.sys.mjs:137:62\ntakeScreenshot@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:287:37\n"
+Marionette threw an error: [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: chrome://remote/content/shared/Capture.sys.mjs :: capture.canvas :: line 137"  data: no]
+capture.canvas@chrome://remote/content/shared/Capture.sys.mjs:137:62
+takeScreenshot@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:287:37
+
+console.error: "Marionette threw an error: [Exception... \"Failure\"  nsresult: \"0x80004005 (NS_ERROR_FAILURE)\"  location: \"JS frame :: chrome://remote/content/shared/Capture.sys.mjs :: capture.canvas :: line 137\"  data: no]\ncapture.canvas@chrome://remote/content/shared/Capture.sys.mjs:137:62\ntakeScreenshot@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:287:37\n"
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+JavaScript error: https://poshanabhiyaan.gov.in/js/HeaderJS/Header.js, line 1: SyntaxError: import declarations may only appear at top level of a module
+JavaScript error: https://poshanabhiyaan.gov.in/js/HeaderJS/Header.js, line 1: SyntaxError: import declarations may only appear at top level of a module
+JavaScript error: https://poshanabhiyaan.gov.in/js/HeaderJS/Header.js, line 1: SyntaxError: import declarations may only appear at top level of a module
+JavaScript error: https://poshanabhiyaan.gov.in/js/HeaderJS/Header.js, line 1: SyntaxError: import declarations may only appear at top level of a module
+JavaScript error: https://poshanabhiyaan.gov.in/js/HeaderJS/Header.js, line 1: SyntaxError: import declarations may only appear at top level of a module
+JavaScript error: https://poshanabhiyaan.gov.in/js/HeaderJS/Header.js, line 1: SyntaxError: import declarations may only appear at top level of a module
+JavaScript error: https://poshanabhiyaan.gov.in/js/HeaderJS/Header.js, line 1: SyntaxError: import declarations may only appear at top level of a module
+JavaScript error: https://poshanabhiyaan.gov.in/js/HeaderJS/Header.js, line 1: SyntaxError: import declarations may only appear at top level of a module
+JavaScript error: https://poshanabhiyaan.gov.in/js/HeaderJS/Header.js, line 1: SyntaxError: import declarations may only appear at top level of a module
+JavaScript error: https://poshanabhiyaan.gov.in/js/HeaderJS/Header.js, line 1: SyntaxError: import declarations may only appear at top level of a module
+JavaScript error: https://poshanabhiyaan.gov.in/js/HeaderJS/Header.js, line 1: SyntaxError: import declarations may only appear at top level of a module
+JavaScript error: https://poshanabhiyaan.gov.in/js/HeaderJS/Header.js, line 1: SyntaxError: import declarations may only appear at top level of a module
+JavaScript error: https://poshanabhiyaan.gov.in/js/HeaderJS/Header.js, line 1: SyntaxError: import declarations may only appear at top level of a module
+Marionette threw an error: [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: chrome://remote/content/shared/Capture.sys.mjs :: capture.canvas :: line 137"  data: no]
+capture.canvas@chrome://remote/content/shared/Capture.sys.mjs:137:62
+takeScreenshot@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:287:37
+
+console.error: "Marionette threw an error: [Exception... \"Failure\"  nsresult: \"0x80004005 (NS_ERROR_FAILURE)\"  location: \"JS frame :: chrome://remote/content/shared/Capture.sys.mjs :: capture.canvas :: line 137\"  data: no]\ncapture.canvas@chrome://remote/content/shared/Capture.sys.mjs:137:62\ntakeScreenshot@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:287:37\n"
+Marionette threw an error: [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: chrome://remote/content/shared/Capture.sys.mjs :: capture.canvas :: line 137"  data: no]
+capture.canvas@chrome://remote/content/shared/Capture.sys.mjs:137:62
+takeScreenshot@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:287:37
+
+console.error: "Marionette threw an error: [Exception... \"Failure\"  nsresult: \"0x80004005 (NS_ERROR_FAILURE)\"  location: \"JS frame :: chrome://remote/content/shared/Capture.sys.mjs :: capture.canvas :: line 137\"  data: no]\ncapture.canvas@chrome://remote/content/shared/Capture.sys.mjs:137:62\ntakeScreenshot@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:287:37\n"
+JavaScript error: https://poshanabhiyaan.gov.in/js/HeaderJS/Header.js, line 1: SyntaxError: import declarations may only appear at top level of a module
+1695396544250	geckodriver	INFO	Listening on 127.0.0.1:52676
+1695396547338	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52677" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Anurag\\AppData\\Local\\Temp\\rust_mozprofile5XZycZ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695396547772	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695396547866	Marionette	INFO	Listening on port 52686
+WebDriver BiDi listening on ws://127.0.0.1:52677
+Read port: 52686
+1695396548133	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1695396550833	Marionette	INFO	Stopped listening on port 52686
+Dynamically enable window occlusion 1
+1695396550849	CDP	WARN	Failed to remove undefined (Could not parse path (undefined): NS_ERROR_FILE_UNRECOGNIZED_PATH)
