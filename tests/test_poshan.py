@@ -6,7 +6,7 @@ from selenium.webdriver.support.select import Select
 import config, time
 from selenium.common.exceptions import StaleElementReferenceException
 
-CURRENT_DATE = '2023-09-17'
+CURRENT_DATE = '2023-09-18'
 ADULT_MALE_COUNT_DATA = 1
 ADULT_FEMALE_COUNT_DATA = 2
 CHILDREN_MALE_COUNT_DATA = 3
@@ -30,9 +30,9 @@ AWCCURRENT = ""
 #            "Ward No 13/5", "Ward No 13/6", "Ward No 13/7", "Ward No 2/1", "Ward No 2/2", "Ward No 2/3", "Ward No 2/4", "Ward No 2/5", "Ward No 2/6", "Ward No 3/1", "Ward No 3/2", "Ward No 3/3",
 #            "Ward No 3/4", "Ward No 3/5", "Ward No 3/6", "Ward No 4/3", "Ward No 4/4", "Ward No 4/5", "Ward No 4/6", "Ward No 5/1", "Ward No 5/2", "Ward No 5/3", "Ward No 5/4",
 #            "Ward No 5/5", "WWard No 6/1", "Ward No 6/2", "Ward No 6/3", "Ward No 6/4", "Ward No 6/5", "Ward No 7/2", "Ward No 7/3", "Ward No 7/4", "Ward No 7/5", "Ward No 7/6",
-#             "Ward No 7/7", "Ward No 8/1", "Ward No 8/2", "Ward No 8/3", "Ward No 8/5", "Ward No 9/1", "Ward No 9/2", "Ward No 9/3", "Ward No 9/4", "Ward No 9/5"]
+#             "Ward No 7/7", "Ward No 8/1", "Ward No 8/2", "Ward No 8/3", "Ward No 8/5", "Ward No 9/1", "Ward No 9/2", "Ward No 9/3", "Ward No 9/4", "Ward No 9/5" --- "Ward No 2/2", "Ward No 2/3", "Ward No 2/4", "Ward No 2/5", ]
 
-awcList = ["Ward No 2/2", "Ward No 2/3", "Ward No 2/4", "Ward No 2/5", "Ward No 2/6", "Ward No 3/1", "Ward No 3/2", "Ward No 3/3",
+awcList = ["Ward No 2/5", "Ward No 2/6", "Ward No 3/1", "Ward No 3/2", "Ward No 3/3",
            "Ward No 3/4", "Ward No 3/5", "Ward No 3/6","Ward No 4/3", "Ward No 4/4", "Ward No 4/5", "Ward No 4/6", "Ward No 5/1", "Ward No 5/2", "Ward No 5/3", "Ward No 5/4",
            "Ward No 5/5", "WWard No 6/1", "Ward No 6/2", "Ward No 6/3", "Ward No 6/4", "Ward No 6/5", "Ward No 7/2", "Ward No 7/3", "Ward No 7/4", "Ward No 7/5", "Ward No 7/6",
             "Ward No 7/7",  "Ward No 8/2", "Ward No 8/3",  "Ward No 9/2", "Ward No 9/3", "Ward No 9/4", "Ward No 9/5"]
@@ -46,22 +46,19 @@ class TestPoshanPage(BaseClass):
         self.get_element(USERNAME_INPUT).clear()
         self.get_element(PASSWORD_INPUT).clear()
         self.get_element(USERNAME_INPUT).send_keys('mow&cd-506704') #right Username
-        
         self.get_element(PASSWORD_INPUT).send_keys('mow&cd-506704') #right Password    
         self.get_element(LOGIN_BUTTON).submit()
         time.sleep(config.ACTION_DELAY)
-
-
         self.submitAcitvityParticipationForm(SELECT_THEME_ELEMENT, LEVEL_ELEMENT, SELECT_ACTIVITY_ELEMENT, SELECT_AWC_ELEMENT )    
 
     def submitAcitvityParticipationForm(self, themeLocator, levelLocator, activityLocator, awcLocator):
         global ISSTALE
         global THEMEATSTALE
-        global awc
         global AWCATSTALE
         global CURRENT_DATE
         global AWCLASTSELECTEDTHEME
         global AWCCURRENT
+        global awcList
         themeSelect = Select(self.get_element(themeLocator))
         levelSelect = Select(self.get_element(levelLocator))
         activitySelect = Select(self.get_element(activityLocator))
@@ -89,9 +86,6 @@ class TestPoshanPage(BaseClass):
                     if(levelOption.text != "Select Level"):
                           if(levelOption.text == "AWC" and themeoption.text != "Select Theme"):
                             self.selectByVisibleText(LEVEL_ELEMENT, levelOption.text)
-                            # awcSelect = Select(self.get_element(awcLocator))
-                            # awcSelectedOption = awcSelect.options[1]
-                            # self.selectByVisibleText(SELECT_AWC_ELEMENT, awcSelectedOption.text)  
                             COUNT = 0;
                             activitySelectNew = Select(self.get_element(activityLocator))
                             for activityOptionNew in activitySelectNew.options:
@@ -106,7 +100,6 @@ class TestPoshanPage(BaseClass):
                                  self.selectByVisibleText(SELECT_THEME_ELEMENT, themeoption.text)
                                  self.selectByVisibleText(LEVEL_ELEMENT, levelOption.text)
                                  if(levelOption.text == "AWC"):
-                                  #if(awcOption.text == ""):
                                   awcSelect = Select(self.get_element(awcLocator))
                                   for awcOptionNew in awcSelect.options:
                                     print("awc options are: ", awcOptionNew.text)
@@ -116,15 +109,17 @@ class TestPoshanPage(BaseClass):
                                         break;                                              
                                   self.selectByVisibleText(SELECT_ACTIVITY_ELEMENT, CURRENTACTIVITY)
                                   AWCLASTSELECTEDTHEME = CURRENTACTIVITY
+                                  AWCCURRENT = awcOptionNew.text
                                   COUNT = COUNT + 1
-                                  self.enterFormData(FROM_DATE_ELEMENT, TO_DATE_ELEMENT, ADULT_MALE_COUNT, ADULT_FEMALE_COUNT, CHILDREN_MALE_COUNT, CHILDREN_FEMALE_COUNT, SUBMIT_BUTTON, CURRENT_DATE, ADULT_MALE_COUNT_DATA, ADULT_FEMALE_COUNT_DATA,CHILDREN_MALE_COUNT_DATA, CHILDREN_FEMALE_COUNT_DATA, COUNT )  
+                                  self.enterFormData(FROM_DATE_ELEMENT, TO_DATE_ELEMENT, ADULT_MALE_COUNT, ADULT_FEMALE_COUNT, CHILDREN_MALE_COUNT, CHILDREN_FEMALE_COUNT, SUBMIT_BUTTON, CURRENT_DATE, ADULT_MALE_COUNT_DATA, ADULT_FEMALE_COUNT_DATA,CHILDREN_MALE_COUNT_DATA, CHILDREN_FEMALE_COUNT_DATA, COUNT)  
                               except StaleElementReferenceException:
                                 ISSTALE = True
                                 AWCATSTALE = AWCCURRENT
                                 THEMEATSTALE = themeoption.text
                                 self.driver.refresh()
-                                self.submitAcitvityParticipationForm(SELECT_THEME_ELEMENT, LEVEL_ELEMENT, SELECT_ACTIVITY_ELEMENT, SELECT_AWC_ELEMENT )
-                            ISSTALE = False      
+                                self.submitAcitvityParticipationForm(SELECT_THEME_ELEMENT, LEVEL_ELEMENT, SELECT_ACTIVITY_ELEMENT, SELECT_AWC_ELEMENT)
+                            ISSTALE = False
+                            #awcList = awcList.remove(AWCCURRENT)   
                           elif(levelOption.text == 'Black'):
                                self.selectByVisibleText(LEVEL_ELEMENT, levelOption.text)
                                COUNT = 0;
@@ -137,7 +132,7 @@ class TestPoshanPage(BaseClass):
                                       COUNT = COUNT + 1
                                       self.enterFormData(FROM_DATE_ELEMENT, TO_DATE_ELEMENT, ADULT_MALE_COUNT, ADULT_FEMALE_COUNT, CHILDREN_MALE_COUNT, CHILDREN_FEMALE_COUNT, SUBMIT_BUTTON, CURRENT_DATE, ADULT_MALE_COUNT_DATA, ADULT_FEMALE_COUNT_DATA,CHILDREN_MALE_COUNT_DATA, CHILDREN_FEMALE_COUNT_DATA, COUNT )
                           
-                                    
+          awcList = awcList.remove(AWCCURRENT)                          
 
 
     def enterFormData(self, FROM_DATE_ELEMENT, TO_DATE_ELEMENT, ADULT_MALE_COUNT, ADULT_FEMALE_COUNT, CHILDREN_MALE_COUNT, CHILDREN_FEMALE_COUNT, SUBMIT_BUTTON, CURRENT_DATE, ADULT_MALE_COUNT_DATA, ADULT_FEMALE_COUNT_DATA,CHILDREN_MALE_COUNT_DATA, CHILDREN_FEMALE_COUNT_DATA, COUNT):
