@@ -6,7 +6,7 @@ from selenium.webdriver.support.select import Select
 import config, time
 from selenium.common.exceptions import StaleElementReferenceException
 
-CURRENT_DATE = '2023-09-18'
+CURRENT_DATE = '2023-09-20'
 ADULT_MALE_COUNT_DATA = 1
 ADULT_FEMALE_COUNT_DATA = 2
 CHILDREN_MALE_COUNT_DATA = 3
@@ -16,13 +16,13 @@ ISSTALE = False
 THEMEATSTALE = ""
 AWCLASTSELECTEDTHEME =""
 AWCCURRENT = ""
-# awcList = ["Balmiki Basti 1", "Balmiki Basti 2", "Laxminagar", "Nai Basti", "Nai Basti Pachimi", "Panjabi Colony" , "Ward No 1/2", "Ward No 1/3", "Ward No 1/4", "Ward No 1/5" ,"Ward No 1/6", 
-#            "Ward No 10/1", "Ward No 10/2", "Ward No 10/3", "Ward No 10/4", "Ward No 10/5", "Ward No 11/1", "Ward No 11/2", "Ward No 11/3", "Ward No 11/4", "Ward No 11/5", "Ward No 11/6", 
-#            "Ward No 12/1", "Ward No 12/2", "Ward No 12/3", "Ward No 12/4", "Ward No 12/5", "Ward No 12/6", "Ward No 12/7", "Ward No 13/1", "Ward No 13/2", "Ward No 13/3", "Ward No 13/4",
-#            "Ward No 13/5", "Ward No 13/6", "Ward No 13/7", "Ward No 2/1", "Ward No 2/2", "Ward No 2/3", "Ward No 2/4", "Ward No 2/5", "Ward No 2/6", "Ward No 3/1", "Ward No 3/2", "Ward No 3/3",
-#            "Ward No 3/4", "Ward No 3/5", "Ward No 3/6", "Ward No 4/1", "Ward No 4/2", "Ward No 4/3", "Ward No 4/4", "Ward No 4/5", "Ward No 4/6", "Ward No 5/1", "Ward No 5/2", "Ward No 5/3", "Ward No 5/4",
-#            "Ward No 5/5", "WWard No 6/1", "Ward No 6/2", "Ward No 6/3", "Ward No 6/4", "Ward No 6/5", "Ward No 7/1", "Ward No 7/2", "Ward No 7/3", "Ward No 7/4", "Ward No 7/5", "Ward No 7/6",
-#             "Ward No 7/7", "Ward No 8/1", "Ward No 8/2", "Ward No 8/3", "Ward No 8/4", "Ward No 8/5", "Ward No 8/6", "Ward No 9/1", "Ward No 9/2", "Ward No 9/3", "Ward No 9/4", "Ward No 9/5"]
+awcList = [ "Ward No 1/4", "Ward No 1/5" ,"Ward No 1/6", 
+           "Ward No 10/1", "Ward No 10/2", "Ward No 10/3", "Ward No 10/4", "Ward No 10/5", "Ward No 11/1", "Ward No 11/2", "Ward No 11/3", "Ward No 11/4", "Ward No 11/5", "Ward No 11/6", 
+           "Ward No 12/1", "Ward No 12/2", "Ward No 12/3", "Ward No 12/4", "Ward No 12/5", "Ward No 12/6", "Ward No 12/7", "Ward No 13/1", "Ward No 13/2", "Ward No 13/3", "Ward No 13/4",
+           "Ward No 13/5", "Ward No 13/6", "Ward No 13/7", "Ward No 2/1", "Ward No 2/2", "Ward No 2/3", "Ward No 2/4", "Ward No 2/5", "Ward No 2/6", "Ward No 3/1", "Ward No 3/2", "Ward No 3/3",
+           "Ward No 3/4", "Ward No 3/5", "Ward No 3/6", "Ward No 4/1", "Ward No 4/2", "Ward No 4/3", "Ward No 4/4", "Ward No 4/5", "Ward No 4/6", "Ward No 5/1", "Ward No 5/2", "Ward No 5/3", "Ward No 5/4",
+           "Ward No 5/5", "WWard No 6/1", "Ward No 6/2", "Ward No 6/3", "Ward No 6/4", "Ward No 6/5", "Ward No 7/1", "Ward No 7/2", "Ward No 7/3", "Ward No 7/4", "Ward No 7/5", "Ward No 7/6",
+            "Ward No 7/7", "Ward No 8/1", "Ward No 8/2", "Ward No 8/3", "Ward No 8/4", "Ward No 8/5", "Ward No 8/6", "Ward No 9/2", "Ward No 9/3", "Ward No 9/4", "Ward No 9/5"]
 
 # awcList = ["Balmiki Basti 1", "Balmiki Basti 2", "Laxminagar", "Nai Basti", "Nai Basti Pachimi", "Panjabi Colony" , "Ward No 1/2", "Ward No 1/3", "Ward No 1/4", "Ward No 1/5" ,"Ward No 1/6", 
 #            "Ward No 10/1", "Ward No 10/2", "Ward No 10/3", "Ward No 10/4", "Ward No 10/5", "Ward No 11/1", "Ward No 11/2", "Ward No 11/3", "Ward No 11/4", "Ward No 11/5", "Ward No 11/6", 
@@ -32,10 +32,7 @@ AWCCURRENT = ""
 #            "Ward No 5/5", "WWard No 6/1", "Ward No 6/2", "Ward No 6/3", "Ward No 6/4", "Ward No 6/5", "Ward No 7/2", "Ward No 7/3", "Ward No 7/4", "Ward No 7/5", "Ward No 7/6",
 #             "Ward No 7/7", "Ward No 8/1", "Ward No 8/2", "Ward No 8/3", "Ward No 8/5", "Ward No 9/1", "Ward No 9/2", "Ward No 9/3", "Ward No 9/4", "Ward No 9/5" --- "Ward No 2/2", "Ward No 2/3", "Ward No 2/4", "Ward No 2/5", ]
 
-awcList = ["Ward No 2/5", "Ward No 2/6", "Ward No 3/1", "Ward No 3/2", "Ward No 3/3",
-           "Ward No 3/4", "Ward No 3/5", "Ward No 3/6","Ward No 4/3", "Ward No 4/4", "Ward No 4/5", "Ward No 4/6", "Ward No 5/1", "Ward No 5/2", "Ward No 5/3", "Ward No 5/4",
-           "Ward No 5/5", "WWard No 6/1", "Ward No 6/2", "Ward No 6/3", "Ward No 6/4", "Ward No 6/5", "Ward No 7/2", "Ward No 7/3", "Ward No 7/4", "Ward No 7/5", "Ward No 7/6",
-            "Ward No 7/7",  "Ward No 8/2", "Ward No 8/3",  "Ward No 9/2", "Ward No 9/3", "Ward No 9/4", "Ward No 9/5"]
+# awcList = ["Ward No 9/1", "Balmiki Basti 1", "Balmiki Basti 2", "Laxminagar", "Nai Basti", "Nai Basti Pachimi", "Panjabi Colony" , "Ward No 1/1", "Ward No 1/2", "Ward No 1/3",]
 
 class TestPoshanPage(BaseClass):
     def test_poshan_login_page(self):
@@ -65,11 +62,14 @@ class TestPoshanPage(BaseClass):
 
         for awc in awcList:
           # Iterate through each option in the select element
+          print("awclist is:", awcList)
           if ISSTALE:
              AWCCURRENT = AWCATSTALE
           else:
              AWCCURRENT = awc
-          for themeoption in themeSelect.options:
+          print("current awc is: ", AWCCURRENT)
+          if awc == AWCCURRENT:
+           for themeoption in themeSelect.options:
             # Print the text of each option
             print("theme options are: ", themeoption.text)
             CURRENTTHEME = themeoption.text
@@ -131,8 +131,7 @@ class TestPoshanPage(BaseClass):
                                       #CURRENT_DATE = '2023-09-20'
                                       COUNT = COUNT + 1
                                       self.enterFormData(FROM_DATE_ELEMENT, TO_DATE_ELEMENT, ADULT_MALE_COUNT, ADULT_FEMALE_COUNT, CHILDREN_MALE_COUNT, CHILDREN_FEMALE_COUNT, SUBMIT_BUTTON, CURRENT_DATE, ADULT_MALE_COUNT_DATA, ADULT_FEMALE_COUNT_DATA,CHILDREN_MALE_COUNT_DATA, CHILDREN_FEMALE_COUNT_DATA, COUNT )
-                          
-          awcList = awcList.remove(AWCCURRENT)                          
+           #self.removeAWCFromList(awcList, AWCCURRENT)                      
 
 
     def enterFormData(self, FROM_DATE_ELEMENT, TO_DATE_ELEMENT, ADULT_MALE_COUNT, ADULT_FEMALE_COUNT, CHILDREN_MALE_COUNT, CHILDREN_FEMALE_COUNT, SUBMIT_BUTTON, CURRENT_DATE, ADULT_MALE_COUNT_DATA, ADULT_FEMALE_COUNT_DATA,CHILDREN_MALE_COUNT_DATA, CHILDREN_FEMALE_COUNT_DATA, COUNT):
@@ -182,7 +181,16 @@ class TestPoshanPage(BaseClass):
                 self.selectByVisibleText(SELECT_AWC_ELEMENT, selectedoption.text)
                 break;
         
-
+    def removeAWCFromList(self, awcList, awcCurrent):
+       print("The original list is : " + str(awcList))
+       while (awcCurrent in awcList):
+          awcList.remove(awcCurrent)
+          time.sleep(config.ACTION_DELAY)
+            
+       print("Modified list is:", str(awcList))
+          
+          
+       
     
        
         
